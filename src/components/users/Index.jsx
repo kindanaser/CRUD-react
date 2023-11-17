@@ -56,10 +56,10 @@ export default function Index() {
             <i className="fs-4 bi-speedometer2" /> <span className="ms-1 d-none d-sm-inline">Dashboard</span> </a>
           <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
             <li className="w-100">
-              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Create</span></a>
+              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span>1</a>
             </li>
             <li>
-              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Index</span></a>
+              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span>2</a>
             </li>
           </ul>
         </li>

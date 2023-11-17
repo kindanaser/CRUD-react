@@ -56,10 +56,10 @@ export default function Index() {
             <i className="fs-4 bi-speedometer2" /> <span className="ms-1 d-none d-sm-inline">Dashboard</span> </a>
           <ul className="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
             <li className="w-100">
-              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span> 1 </a>
+              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Create</span></a>
             </li>
             <li>
-              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Item</span> 2 </a>
+              <a href="#" className="nav-link px-0"> <span className="d-none d-sm-inline">Index</span></a>
             </li>
           </ul>
         </li>
@@ -140,9 +140,9 @@ export default function Index() {
            <td>{user.name}</td>
            <td>{user.email}</td>
            <td>{user.password}</td>
-           <td  className="btn btn-danger me-2"onClick={()=>(deleteUser(user._id))}>Delete</td>
-           <td className="btn btn-info me-2"><Link className="text-decoration-none text-dark" to={`/users/${user._id}`}>Details</Link></td>
-           <td className="btn btn-success me-2"><Link className="text-decoration-none text-dark" to={`/users/edit/${user._id}`}>Edit</Link></td>
+           <td onClick={()=>(deleteUser(user._id))}><button type="button" class="btn btn-danger">Delete</button></td>
+           <td><Link to={`/users/${user._id}`}><button type="button" class="btn btn-warning text-white">Details</button></Link></td>
+           <td><Link to={`/users/edit/${user._id}`}><button type="button" class="btn btn-success">Edit</button></Link></td>
        </tr>
         </React.Fragment>
     )
